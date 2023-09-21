@@ -1,3 +1,7 @@
+import { redirect } from "react-router-dom";
+
+const url = "https://foodiefaves.onrender.com/recipes/"
+
 // Create action
 export const createAction = async({request}) => {
     const formData = await request.formData();
@@ -48,6 +52,6 @@ export const deleteAction = async({params}) => {
     await fetch(url + id, {
         method: "delete"
     })
-    
+
     return redirect("/")
 }
