@@ -22,11 +22,8 @@ export const createAction = async({request}) => {
 
 // Update action
 export const updateAction = async({request, params}) => {
-    // get the id from params
     const id = params.id
-    // parse out the form data
     const formData = await request.formData();
-    // construct the updated todo
     const updatedRecipe = {
         title: formData.get('title'),
         img: formData.get('img'),
@@ -34,8 +31,6 @@ export const updateAction = async({request, params}) => {
         author: formData.get('author'),
         course: formData.get('course')
     }
-
-    // make a request to update a todo
     await fetch(url + id, {
         method: "put",
         headers: {
@@ -44,6 +39,15 @@ export const updateAction = async({request, params}) => {
         body: JSON.stringify(updatedRecipe)
     })
 
-    // redirect to the show page
     return redirect(`/post/${id}`)
+}
+
+// Delete action
+export const deleteAction = async({params}) => {
+    const id = params.id
+    await fetch(url + id, {
+        method: "delete"
+    })
+    
+    return redirect("/")
 }
