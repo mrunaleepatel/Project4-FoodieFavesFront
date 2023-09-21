@@ -20,4 +20,4 @@ FoodieFaves is an app that lets you create lists of your favorite dishes you've 
 
 ### Mockup: 
 
-![Desktop view](<Screenshot 2023-09-20 at 7.20.03 PM.png>)
+![Desktop view](./public/Images/Mockup.png)
