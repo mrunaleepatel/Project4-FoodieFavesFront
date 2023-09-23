@@ -1,0 +1,79 @@
+body {
+    background-image: url(../public/Images/indian-condiments-with-copy-space-view.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 100%;
+    margin-top: 140px;
+}
+
+/* form {
+    margin-bottom: 45rem;
+} */
+
+h2 {
+    font-size: 3.6rem;
+    margin-top: 330px;
+    font-family: 'Fugaz One', cursive;
+}
+
+h3 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Fugaz One', cursive;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 16px; /* Adjust the gap between grid items as needed */
+  }
+  
+  .grid-item {
+    text-align: center; /* Center align content within each grid item */
+  }
+  
+  .grid-item img {
+    max-width: 100%; /* Ensure images don't exceed the grid item width */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+  
+  .grid-item {
+    margin-top: 8px; /* Add some space between the image and the button */
+  }
+  
+  input[type='text'] {
+    width: 52%;
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  select {
+    width: 52%;
+    background-color: aliceblue;
+    text-align: center;
+  }
+
+  button {
+    background-color:brown;
+    border: 0.1rem solid brown;
+  }
+
+  a.index-button {
+    background-color:brown;
+    border: 0.1rem solid brown;
+    border-radius: 10px;
+    height: 4rem;
+    color: aliceblue;
+  }
+
+  
