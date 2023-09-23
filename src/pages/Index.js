@@ -7,6 +7,14 @@ function Index (props){
     console.log(recipes)
     return <>
         <div style={{ textAlign: 'center' }}>
+            {/* Navigation Bar */}
+            <div className="navigation">
+        <nav className="nav-links">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/">Create Recipe</Link>
+        </nav>
+        </div>
     <h2>Create a Recipe</h2>
     <Form method="post" action="/create">
         <input type="text" name="title" placeholder="Title" />
@@ -14,12 +22,14 @@ function Index (props){
         <input type="text" name="url" placeholder="Url" />
         <input type="text" name="author" placeholder="Author" />
         <label htmlFor="courseDropdown">Select a course:</label>
-        <select name="courseDropdown" id="courseDropdown" className="custom-dropdown">
+        <select name="course" id="courseDropdown" className="custom-dropdown">
         <option value="breakfast">Breakfast</option>
         <option value="lunch">Lunch</option>
         <option value="dinner">Dinner</option>
         </select>
+        <div className="show-button">
         <button style={{ display: 'block', margin: '0 auto' }}>Create a new Recipe</button>
+        </div>
     </Form>
     </div>
         {/* {recipes.map((recipe) => <Post key={recipe.id} post={recipe}/>)} */}
@@ -32,7 +42,7 @@ function Index (props){
                 <h3>{recipe.title}</h3>
             </div>
             <Link to={`post/${recipe.id}`}>
-                <div className="image-button">
+            <div className="show-button">
                 <button>Update Recipe</button>
                 </div>
             </Link>

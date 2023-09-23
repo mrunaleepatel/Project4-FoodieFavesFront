@@ -15,10 +15,6 @@ img {
     margin-top: 140px;
 }
 
-/* form {
-    margin-bottom: 45rem;
-} */
-
 h2 {
     font-size: 3.6rem;
     margin-top: 330px;
@@ -33,21 +29,21 @@ h3 {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-    gap: 16px; /* Adjust the gap between grid items as needed */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px; 
   }
   
   .grid-item {
-    text-align: center; /* Center align content within each grid item */
+    text-align: center; 
   }
   
   .grid-item img {
-    max-width: 100%; /* Ensure images don't exceed the grid item width */
-    height: auto; /* Maintain the image's aspect ratio */
+    max-width: 100%; 
+    height: auto; 
   }
   
   .grid-item {
-    margin-top: 8px; /* Add some space between the image and the button */
+    margin-top: 8px; 
   }
   
   input[type='text'] {
@@ -63,17 +59,53 @@ h3 {
     text-align: center;
   }
 
-  button {
-    background-color:brown;
-    border: 0.1rem solid brown;
+  .show-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
-
-  a.index-button {
-    background-color:brown;
-    border: 0.1rem solid brown;
-    border-radius: 10px;
-    height: 4rem;
-    color: aliceblue;
-  }
-
   
+.show-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.show-button button {
+  background-color: brown;
+  border: 0.1rem solid brown;
+  color: white;
+  padding: -0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
+
+.show-button button:hover {
+  background-color: darkred;
+  border-color: darkred;
+}
+
+.navigation {
+  background-color: black; 
+  padding: 10px;
+  text-align: right;
+}
+
+.nav-links {
+  display: inline-block; 
+}
+
+.nav-links a {
+  color: white; 
+  text-decoration: none; 
+  margin-left: 20px; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-links a:hover {
+  text-decoration: underline; 
+}
