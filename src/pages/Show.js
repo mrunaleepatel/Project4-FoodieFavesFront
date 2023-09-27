@@ -1,6 +1,7 @@
 import {Link, useLoaderData, Form} from 'react-router-dom';
 import "../styles.css";
 
+
 function Show (props){
     const post = useLoaderData()
     const div = {
@@ -11,8 +12,7 @@ function Show (props){
     }
     
     return (
-
-         <div style={div}>
+            <div style={div}>
             <div style={{textAlign: "center"}}>
                 <h2>Update {post.title}</h2>
                 <Form method="post" action={`/update/${post.id}`}>
@@ -42,6 +42,7 @@ function Show (props){
             </div>
             
             </div>
+        
     );
 }
 

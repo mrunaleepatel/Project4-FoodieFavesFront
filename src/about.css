@@ -1,0 +1,71 @@
+body {
+    background-image: url(../src/Images/indian-condiments-with-copy-space-view.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: aliceblue;
+      font-size: 1.6em;
+      font-weight: 300;
+      letter-spacing: .01em;
+      line-height: 1.6;
+      font-family: 'Courier New', Courier, monospace;
+      height: 100vh;
+  }
+
+p {
+    margin: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-family: 'Philosopher', sans-serif;
+}
+
+h2 {
+    font-size: 3.6rem;
+    margin-top: 330px;
+    font-family: 'Fugaz One', cursive;
+}
+
+h5 {
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+h6 {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+    font-weight: 500;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+}
+  
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: brown;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }

@@ -1,5 +1,5 @@
 body {
-    background-image: url(../public/Images/indian-condiments-with-copy-space-view.jpg);
+  background-image: url(../src/Images/indian-condiments-with-copy-space-view.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     color: aliceblue;
@@ -8,7 +8,21 @@ body {
     letter-spacing: .01em;
     line-height: 1.6;
     font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
 }
+
+/* .update {
+  background-image: url(../src/Images/indian-condiments-with-copy-space-view.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+} */
 
 img {
     width: 100%;
@@ -27,6 +41,16 @@ h3 {
     font-family: 'Fugaz One', cursive;
 }
 
+h4 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding-left: 100px;
+}
+
+
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -42,8 +66,10 @@ h3 {
     height: auto; 
   }
   
-  .grid-item {
-    margin-top: 8px; 
+  .gird-item-content {
+    max-width: 100%;
+    height: auto;
+
   }
   
   input[type='text'] {
@@ -91,7 +117,7 @@ h3 {
 
 .navigation {
   background-color: black; 
-  padding: 10px;
+  padding: 20px;
   text-align: right;
 }
 
@@ -108,4 +134,8 @@ h3 {
 
 .nav-links a:hover {
   text-decoration: underline; 
+}
+
+.form {
+  margin-bottom: -5rem;
 }

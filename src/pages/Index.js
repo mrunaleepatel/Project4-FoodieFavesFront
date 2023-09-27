@@ -4,7 +4,6 @@ import "../styles.css";
 
 function Index (props){
     const recipes = useLoaderData()
-    console.log(recipes)
     return <>
         <div style={{ textAlign: 'center' }}>
             {/* Navigation Bar */}
@@ -13,9 +12,11 @@ function Index (props){
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/">Create Recipe</Link>
+            <Link to="/contact">Contact</Link>
         </nav>
         </div>
-    <h2>Create a Recipe</h2>
+    <h2>Add a Recipe</h2>
+    <div className="form">
     <Form method="post" action="/create">
         <input type="text" name="title" placeholder="Title" />
         <input type="text" name="img" placeholder="Img" />
@@ -28,9 +29,10 @@ function Index (props){
         <option value="dinner">Dinner</option>
         </select>
         <div className="show-button">
-        <button style={{ display: 'block', margin: '0 auto' }}>Create a new Recipe</button>
+        <button style={{ display: 'block', margin: '0 auto' }}>Add a Recipe</button>
         </div>
     </Form>
+    </div>
     </div>
         {/* {recipes.map((recipe) => <Post key={recipe.id} post={recipe}/>)} */}
         
