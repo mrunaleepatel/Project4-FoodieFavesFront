@@ -11,19 +11,6 @@ body {
     height: 100vh;
 }
 
-/* .update {
-  background-image: url(../src/Images/indian-condiments-with-copy-space-view.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: aliceblue;
-    font-size: 1.6em;
-    font-weight: 300;
-    letter-spacing: .01em;
-    line-height: 1.6;
-    font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
-} */
-
 img {
     width: 100%;
     margin-top: 140px;
@@ -55,6 +42,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 16px; 
+    margin: 10px;
   }
   
   .grid-item {

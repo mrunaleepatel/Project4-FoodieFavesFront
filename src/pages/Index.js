@@ -12,7 +12,7 @@ function Index (props){
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/">Create Recipe</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/">Contact</Link>
         </nav>
         </div>
     <h2>Add a Recipe</h2>
