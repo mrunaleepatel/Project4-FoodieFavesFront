@@ -46,6 +46,14 @@ function About(props) {
         <h5>
             Whether you're whipping up a quick weeknight dinner, planning an elaborate feast, or simply looking for culinary inspiration, FoodieFaves is your trusted companion on your food journey. Download our app today and start exploring the endless possibilities of home cooking.
         </h5>
+        <div className="badges">
+        <a href="https://aquamarine-capybara-9fc630.netlify.app">
+            <img src="recipefront/src/Images/google-play-badge.png" alt="Get it on Google Play" />
+        </a>
+        <a href="https://aquamarine-capybara-9fc630.netlify.app">
+            <img src="../src/Images/apple-store.png" alt="Download on the App Store" />
+        </a>
+        </div>
     </section>
     
     <section id="dive-into-world">
