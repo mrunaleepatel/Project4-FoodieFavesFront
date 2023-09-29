@@ -25,6 +25,7 @@ function Show (props){
                 <option value="breakfast">Breakfast</option>
                 <option value="lunch">Lunch</option>
                 <option value="dinner">Dinner</option>
+                <option value="appertizers">Appetizers</option>
                 </select>
                 <div className="show-button">
                 <button>Update Recipe</button>

@@ -27,6 +27,7 @@ function Index (props){
         <option value="breakfast">Breakfast</option>
         <option value="lunch">Lunch</option>
         <option value="dinner">Dinner</option>
+        <option value="appetizers">Appetizers</option>
         </select>
         <div className="show-button">
         <button style={{ display: 'block', margin: '0 auto' }}>Add a Recipe</button>
